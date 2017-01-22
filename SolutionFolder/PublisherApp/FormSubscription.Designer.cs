@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox_phone = new System.Windows.Forms.TextBox();
-            this.checkBox_sentByPhone = new System.Windows.Forms.CheckBox();
+            this.textBox_mobile = new System.Windows.Forms.TextBox();
+            this.checkBox_sentByMobile = new System.Windows.Forms.CheckBox();
             this.button_cancel = new System.Windows.Forms.Button();
             this.button_unsubscribe = new System.Windows.Forms.Button();
             this.button_subscribe = new System.Windows.Forms.Button();
@@ -37,22 +37,22 @@
             this.checkBox_sentByMail = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
-            // textBox_phone
+            // textBox_mobile
             // 
-            this.textBox_phone.Location = new System.Drawing.Point(316, 106);
-            this.textBox_phone.Name = "textBox_phone";
-            this.textBox_phone.Size = new System.Drawing.Size(100, 20);
-            this.textBox_phone.TabIndex = 18;
+            this.textBox_mobile.Location = new System.Drawing.Point(316, 106);
+            this.textBox_mobile.Name = "textBox_mobile";
+            this.textBox_mobile.Size = new System.Drawing.Size(100, 20);
+            this.textBox_mobile.TabIndex = 18;
             // 
-            // checkBox_sentByPhone
+            // checkBox_sentByMobile
             // 
-            this.checkBox_sentByPhone.AutoSize = true;
-            this.checkBox_sentByPhone.Location = new System.Drawing.Point(163, 106);
-            this.checkBox_sentByPhone.Name = "checkBox_sentByPhone";
-            this.checkBox_sentByPhone.Size = new System.Drawing.Size(142, 17);
-            this.checkBox_sentByPhone.TabIndex = 17;
-            this.checkBox_sentByPhone.Text = "Message Sent by Phone";
-            this.checkBox_sentByPhone.UseVisualStyleBackColor = true;
+            this.checkBox_sentByMobile.AutoSize = true;
+            this.checkBox_sentByMobile.Location = new System.Drawing.Point(163, 106);
+            this.checkBox_sentByMobile.Name = "checkBox_sentByMobile";
+            this.checkBox_sentByMobile.Size = new System.Drawing.Size(142, 17);
+            this.checkBox_sentByMobile.TabIndex = 17;
+            this.checkBox_sentByMobile.Text = "Message Sent by Mobile";
+            this.checkBox_sentByMobile.UseVisualStyleBackColor = true;
             // 
             // button_cancel
             // 
@@ -104,8 +104,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(637, 348);
-            this.Controls.Add(this.textBox_phone);
-            this.Controls.Add(this.checkBox_sentByPhone);
+            this.Controls.Add(this.textBox_mobile);
+            this.Controls.Add(this.checkBox_sentByMobile);
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.button_unsubscribe);
             this.Controls.Add(this.button_subscribe);
@@ -120,8 +120,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox_phone;
-        private System.Windows.Forms.CheckBox checkBox_sentByPhone;
+        private System.Windows.Forms.TextBox textBox_mobile;
+        private System.Windows.Forms.CheckBox checkBox_sentByMobile;
         private System.Windows.Forms.Button button_cancel;
         private System.Windows.Forms.Button button_unsubscribe;
         private System.Windows.Forms.Button button_subscribe;
