@@ -75,9 +75,6 @@ namespace PublisherApp
                 }
                 else
                 {
-                    //// Creat a new SendViaMobile object for checking of its existence.
-                    //SendViaMobile sendViaMobileObjTest = new SendViaMobile(mobile);
-
                     // Check existence.
                     foreach (SendViaMobile item in Program.sendViaMobileList)
                     {
@@ -111,6 +108,12 @@ namespace PublisherApp
             processMobile();
 
 
+        }
+
+        private void button_unsubscribe_Click(object sender, EventArgs e)
+        {
+            //
+            MessageBox.Show("button_unsubscribe pressed.");
         }
     }
 }

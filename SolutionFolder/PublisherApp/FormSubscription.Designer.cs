@@ -71,6 +71,7 @@
             this.button_unsubscribe.TabIndex = 15;
             this.button_unsubscribe.Text = "Unsubscribe";
             this.button_unsubscribe.UseVisualStyleBackColor = true;
+            this.button_unsubscribe.Click += new System.EventHandler(this.button_unsubscribe_Click);
             // 
             // button_subscribe
             // 
