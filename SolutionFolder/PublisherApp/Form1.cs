@@ -20,7 +20,6 @@ namespace PublisherApp
         private void button_manageSubscription_Click(object sender, EventArgs e)
         {
             FormSubscription formSubscription = new FormSubscription();
-            //this.Hide();
             formSubscription.Show();
 
         }
@@ -28,7 +27,6 @@ namespace PublisherApp
         private void button_publishNotification_Click(object sender, EventArgs e)
         {
             FormNotification formNotification = new FormNotification();
-            //this.Hide();
             formNotification.Show();
         }
 

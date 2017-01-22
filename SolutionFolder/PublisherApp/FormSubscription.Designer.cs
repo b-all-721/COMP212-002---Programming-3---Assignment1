@@ -80,6 +80,7 @@
             this.button_subscribe.TabIndex = 14;
             this.button_subscribe.Text = "Subscribe";
             this.button_subscribe.UseVisualStyleBackColor = true;
+            this.button_subscribe.Click += new System.EventHandler(this.button_subscribe_Click);
             // 
             // textBox_email
             // 

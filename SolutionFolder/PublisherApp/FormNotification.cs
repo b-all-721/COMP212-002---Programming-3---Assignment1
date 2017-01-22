@@ -16,5 +16,10 @@ namespace PublisherApp
         {
             InitializeComponent();
         }
+
+        private void button_publish_Click(object sender, EventArgs e)
+        {
+            Program.publisher.PublishMessage("Notifications published!");
+        }
     }
 }

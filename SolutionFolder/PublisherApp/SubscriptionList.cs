@@ -8,9 +8,7 @@ namespace PublisherApp
 {
     class SubscriptionList
     {
-        public static List<SendViaEmail> emailList = new List<SendViaEmail>();
-
-
-        public static List<string> phoneList = new List<string>();
+        public static List<SendViaEmail> sendViaEmailList = new List<SendViaEmail>();
+        public static List<SendViaMobile> sendViaMobileList = new List<SendViaMobile>();
     }
 }

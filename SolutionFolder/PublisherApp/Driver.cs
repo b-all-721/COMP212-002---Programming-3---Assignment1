@@ -26,10 +26,5 @@ namespace PublisherApp
             publisher.PublishMessage("Hello You Have New Notifications");
             Console.ReadKey();
         }
-
-        //public static void Main(string[] args)
-        //{
-
-        //}
     }
 }

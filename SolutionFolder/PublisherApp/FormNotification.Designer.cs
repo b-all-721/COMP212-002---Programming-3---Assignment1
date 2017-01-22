@@ -51,6 +51,7 @@
             this.button_publish.TabIndex = 6;
             this.button_publish.Text = "Publish";
             this.button_publish.UseVisualStyleBackColor = true;
+            this.button_publish.Click += new System.EventHandler(this.button_publish_Click);
             // 
             // textBox_notification
             // 
