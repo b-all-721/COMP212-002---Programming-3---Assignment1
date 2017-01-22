@@ -30,7 +30,6 @@ namespace PublisherApp
 
         public void sendEmail(string msg)
         {
-            //Console.WriteLine("The message" + "\"" + msg + "\" has already been sent to " + emailAddr);
             MessageBox.Show("The message" + "\"" + msg + "\" has already been sent to " + emailAddr);
 
         }
