@@ -1,6 +1,0 @@
-C:\Toshiba\GDriveToshiba\Shorts\COMP212-002\VS15Workspace\Assignments\Ass1\SolutionFolder\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
-C:\Toshiba\GDriveToshiba\Shorts\COMP212-002\VS15Workspace\Assignments\Ass1\SolutionFolder\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
-C:\Toshiba\GDriveToshiba\Shorts\COMP212-002\VS15Workspace\Assignments\Ass1\SolutionFolder\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
-C:\Toshiba\GDriveToshiba\Shorts\COMP212-002\VS15Workspace\Assignments\Ass1\SolutionFolder\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
-C:\Toshiba\GDriveToshiba\Shorts\COMP212-002\VS15Workspace\Assignments\Ass1\SolutionFolder\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
-C:\Toshiba\GDriveToshiba\Shorts\COMP212-002\VS15Workspace\Assignments\Ass1\SolutionFolder\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
