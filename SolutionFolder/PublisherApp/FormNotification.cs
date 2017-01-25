@@ -19,7 +19,12 @@ namespace PublisherApp
 
         private void button_publish_Click(object sender, EventArgs e)
         {
-            Program.publisher.PublishMessage("Notifications published!");
+            Program.publisher.PublishMessage(textBox_notification.Text);
+        }
+
+        private void button_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

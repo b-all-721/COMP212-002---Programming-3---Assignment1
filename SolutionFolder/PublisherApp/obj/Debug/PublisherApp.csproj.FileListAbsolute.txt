@@ -1,7 +1,5 @@
-C:\Toshiba\GDriveToshiba\Shorts\COMP212-002\VS15Workspace\Assignments\Ass1\SolutionFolder\PublisherApp\bin\Debug\PublisherApp.exe.config
 C:\Toshiba\GDriveToshiba\Shorts\COMP212-002\VS15Workspace\Assignments\Ass1\SolutionFolder\PublisherApp\bin\Debug\PublisherApp.exe
-C:\Toshiba\GDriveToshiba\Shorts\COMP212-002\VS15Workspace\Assignments\Ass1\SolutionFolder\PublisherApp\bin\Debug\PublisherApp.pdb
-C:\Toshiba\GDriveToshiba\Shorts\COMP212-002\VS15Workspace\Assignments\Ass1\SolutionFolder\PublisherApp\obj\Debug\PublisherApp.csprojResolveAssemblyReference.cache
+C:\Toshiba\GDriveToshiba\Shorts\COMP212-002\VS15Workspace\Assignments\Ass1\SolutionFolder\PublisherApp\bin\Debug\PublisherApp.exe.config
 C:\Toshiba\GDriveToshiba\Shorts\COMP212-002\VS15Workspace\Assignments\Ass1\SolutionFolder\PublisherApp\obj\Debug\PublisherApp.Form1.resources
 C:\Toshiba\GDriveToshiba\Shorts\COMP212-002\VS15Workspace\Assignments\Ass1\SolutionFolder\PublisherApp\obj\Debug\PublisherApp.FormNotification.resources
 C:\Toshiba\GDriveToshiba\Shorts\COMP212-002\VS15Workspace\Assignments\Ass1\SolutionFolder\PublisherApp\obj\Debug\PublisherApp.FormSubscription.resources

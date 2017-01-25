@@ -21,7 +21,6 @@ namespace PublisherApp
         {
             FormSubscription formSubscription = new FormSubscription();
             formSubscription.Show();
-
         }
 
         private void button_publishNotification_Click(object sender, EventArgs e)

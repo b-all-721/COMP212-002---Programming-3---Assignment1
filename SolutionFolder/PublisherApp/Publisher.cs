@@ -3,23 +3,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PublisherApp
 {
-          public class Publisher
-          {
-                    //Declare Delegate
-                    public delegate void PublishMessageDel(string msg);
+    public class Publisher
+    {
+        //Declare Delegate
+        public delegate void PublishMessageDel(string msg);
 
-                    //Declare an instance variable which is a Delegate object 
-                    public PublishMessageDel publishmsg = null;
+        //Declare an instance variable which is a Delegate object 
+        public PublishMessageDel publishmsg = null;
 
-                    //Method used to Invoke Delegate
-                    public void PublishMessage(string message)
-                    {
-                              //Invoke Delegate
-                              publishmsg.Invoke(message);
-                           
-                    }
-          }
+        //Method used to Invoke Delegate
+        public void PublishMessage(string message)
+        {
+            if (publishmsg != null)
+            {
+                //Invoke Delegate
+                publishmsg.Invoke(message);
+            }
+            else
+            {
+                MessageBox.Show("You haven't made any subscription yet.");
+            }
+
+
+        }
+    }
 }

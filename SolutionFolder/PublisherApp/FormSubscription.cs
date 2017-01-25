@@ -136,8 +136,13 @@ namespace PublisherApp
                     {
                         if (item.getMobile() == mobile)
                         {
-                            //
+                            // Unsubscribe.
                             item.Unsubscribe(Program.publisher);
+
+                            // Remove the item from the mobileList.
+                            Program.sendViaMobileList.Remove(item);
+
+                            //
                             MessageBox.Show(mobile + " was removed from the subscription list.");
                             return;
                         }
@@ -169,8 +174,13 @@ namespace PublisherApp
                     {
                         if (item.getEmailAddr() == email)
                         {
-                            //
+                            // Unsubscribe.
                             item.Unsubscribe(Program.publisher);
+
+                            // Remove from the emailList.
+                            Program.sendViaEmailList.Remove(item);
+                            
+                            // 
                             MessageBox.Show(email + " was removed from the subscription list.");
                             return;
                         }
@@ -181,6 +191,16 @@ namespace PublisherApp
                     MessageBox.Show(email + " does not exist in the email list.");
                 }
             }
+        }
+
+        private void button_cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FormSubscription_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -62,6 +62,7 @@
             this.button_cancel.TabIndex = 16;
             this.button_cancel.Text = "Cancel";
             this.button_cancel.UseVisualStyleBackColor = true;
+            this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
             // 
             // button_unsubscribe
             // 
@@ -114,6 +115,7 @@
             this.Controls.Add(this.checkBox_sentByMail);
             this.Name = "FormSubscription";
             this.Text = "FormSubscription";
+            this.Load += new System.EventHandler(this.FormSubscription_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
