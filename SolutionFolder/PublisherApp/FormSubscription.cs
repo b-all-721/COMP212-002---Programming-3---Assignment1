@@ -114,7 +114,40 @@ namespace PublisherApp
         private void button_unsubscribe_Click(object sender, EventArgs e)
         {
             processEmailToUnsubscribe();
-            //processMobileToUnsubscribe();
+            processMobileToUnsubscribe();
+        }
+
+        private void processMobileToUnsubscribe()
+        {
+            // Make sure the mobile checkbox is checked.
+            if (checkBox_sentByMobile.Checked)
+            {
+                string mobile = textBox_mobile.Text;
+
+                // Check if mobile is empty.
+                if (mobile == "")
+                {
+                    MessageBox.Show("Mobile can't be empty.");
+                }
+                else
+                {
+                    // Check if the mobile exists in the mobileList.
+                    foreach (SendViaMobile item in Program.sendViaMobileList)
+                    {
+                        if (item.getMobile() == mobile)
+                        {
+                            //
+                            item.Unsubscribe(Program.publisher);
+                            MessageBox.Show(mobile + " was removed from the subscription list.");
+                            return;
+                        }
+                    }
+
+                    // If the code gets here, that means the mobile
+                    // entered does not exist in the mobileList.
+                    MessageBox.Show(mobile + " does not exist in the mobile list.");
+                }
+            }
         }
 
         private void processEmailToUnsubscribe()
