@@ -38,5 +38,10 @@ namespace PublisherApp
         {
             pub.publishmsg += sendEmail;
         }
+
+        public void Unsubscribe(Publisher pub)
+        {
+            pub.publishmsg -= sendEmail;
+        }
     }
 }

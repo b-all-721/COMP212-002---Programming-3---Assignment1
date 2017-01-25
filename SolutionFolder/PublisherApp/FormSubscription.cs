@@ -17,6 +17,10 @@ namespace PublisherApp
             InitializeComponent();
         }
 
+        /*
+         * Go through all the checks to validate
+         * the email.
+         */
         private void processEmail()
         {
             // For email subscription.
@@ -24,17 +28,14 @@ namespace PublisherApp
             {
                 string email = textBox_email.Text;
 
-                // Check if email is valid.
+                // Check if email is empty.
                 if (email == "")
                 {
                     MessageBox.Show("Email can't be empty.");
                 }
                 else
                 {
-                    //// Creat a new SendViaEmail object for checking of its existence.
-                    //SendViaEmail sendViaEmailObjTest = new SendViaEmail(email);
-
-                    // Check existence.
+                    // Check if the email already exists in the emailList.
                     foreach (SendViaEmail item in Program.sendViaEmailList)
                     {
                         if (item.getEmailAddr() == email)
@@ -45,8 +46,10 @@ namespace PublisherApp
                         }
                     }
 
-                    // If the code gets here, create a new email subscription.
-                    // Creat a new SendViaEmail object.
+                    // If the code gets here, that means the email
+                    // entered passed all the test.
+                    // So now, create a new email subscription and
+                    // creat a new SendViaEmail object.
                     SendViaEmail sendViaEmailObj = new SendViaEmail(email);
 
                     // Subscribe.
@@ -106,14 +109,45 @@ namespace PublisherApp
         {
             processEmail();
             processMobile();
-
-
         }
 
         private void button_unsubscribe_Click(object sender, EventArgs e)
         {
-            //
-            MessageBox.Show("button_unsubscribe pressed.");
+            processEmailToUnsubscribe();
+            //processMobileToUnsubscribe();
+        }
+
+        private void processEmailToUnsubscribe()
+        {
+            // Make sure the email checkbox is checked.
+            if (checkBox_sentByMail.Checked)
+            {
+                string email = textBox_email.Text;
+
+                // Check if email is empty.
+                if (email == "")
+                {
+                    MessageBox.Show("Email can't be empty.");
+                }
+                else
+                {
+                    // Check if the email exists in the emailList.
+                    foreach (SendViaEmail item in Program.sendViaEmailList)
+                    {
+                        if (item.getEmailAddr() == email)
+                        {
+                            //
+                            item.Unsubscribe(Program.publisher);
+                            MessageBox.Show(email + " was removed from the subscription list.");
+                            return;
+                        }
+                    }
+
+                    // If the code gets here, that means the email
+                    // entered does not exist in the emailList.
+                    MessageBox.Show(email + " does not exist in the email list.");
+                }
+            }
         }
     }
 }
